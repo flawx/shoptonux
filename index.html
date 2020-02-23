@@ -1,0 +1,458 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>Shop ton UX</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <!-- navbar -->
+
+            <div class="navbar">
+
+                <a class="logo left" title="SHOP TON UX"><b>SHOP TON</b> UX</a>
+
+                <div class="right">
+
+                    <!-- menu link -->
+                    
+                    <a class="link left" href="#article1" title="Confiance client"><b>Confiance client</a>
+                    <a class="link left" href="#article2" title="Interface"><b>Interface</a>
+                    <a class="link left" href="#article3" title="Commande"><b>Commande</a>
+                    <a class="link left" href="#article4" title="Qualité"><b>Qualité</a>
+
+                    <!-- searchbar -->
+
+                    <div class="searchbar left">
+                        <input type="text" placeholder="Rechercher..." title="Rechercher...">
+                        <button 0title="Rechercher">
+                            <i class="material-icons">search</i>
+                        </button>
+                    </div>
+
+                    <!-- iconbar -->
+
+                    <div class="iconsbar right">
+                        <a class="icon" lang="en" title="Compte"><i class="material-icons">account_circle</i></a>
+                        <a class="icon" lang="en" title="Favoris"><i class="material-icons">favorite</i></a>
+                        <a class="icon" lang="en" title="Panier"><i class="material-icons">shopping_cart</i></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <div class="main">
+
+            <!-- welcome section -->
+
+            <div class="container welcome">
+
+                <div class="middle">
+                    <h1>Vous cherchez à créer votre site de e-commerce ?</h1>
+                    <p>Nous vous offrons les 4 principes fondamenteaux pour créer votre site d'e-commerce.</p>
+                    <br>
+                    <a class="button" href="#video" title="Commencer à shopper">Commencer à shopper</a>
+                </div>
+
+            </div>
+
+            <!-- video section -->
+
+            <div class="container video" id="video">
+
+                <div class="center">
+                    <video controls="controls">
+                        <source src="motion-ux.mp4" type="video/mp4">
+                        <source src="motion-ux.mp4.webm" type="video/webm">
+                        <source src="motion-ux.mp4.ogv" type="video/ogg">
+                    </video>
+                    <br>
+                    <p>
+                        <a href="#text-explicatif"><button onclick="toggle('text-explicatif');parentNode.remove();">Texte explicatif</button></a>
+                    </p>
+                    <div id="text-explicatif">
+                        <p>
+                            Vous cherchez à créer votre site e-commerce ?<br><br>
+                            Comment s’y prendre et par où commencer ? Sachez qu’il est plus coûteux de trouver un nouveau client que de le fidéliser.<br>
+                            Comment le fidéliser ? Nous vous offrons les 4 principes fondamentaux pour créer votre site d’e-commerce à  votre image et celle de vos utilisateurs.<br><br>
+                            A chaque principe lorsque vous cliquez sur “panier” : accédez aux explications de celui-ci, jouez au quizz grâce au bouton “accéder au quizz” et recevez votre certificat validant vos nouvelles connaissances.<br><br>
+                            Maintenant c’est à  vous de découvrir ces 4 principes !
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- articles section -->
+
+            <div class="container principes" id="principes">
+
+                <div class="articles">
+
+                    <!-- article 1 -->
+
+                    <div class="article article1" id="article1">
+                        <div class="article-number"><span>1</span></div>
+                        <div class="article-content">
+                            <h1>Principe 1 :  confiance client, respect, confidentialité et sécurité</h1>
+                            <div id="valide1" class="valide"><p><i class="material-icons">check_circle</i>Cours validé</p></div>
+                            <p class="price">0€</p>
+                            <div class="footer">
+                                <div><p>Confiance client, respect, confidentialité et sécurité.</p></div>
+                                <div class="button">
+                                    <p>
+                                        <a href="#cours1" title="Ajouter au panier"><button type="button" onclick="toggle('cours1');parentNode.remove();">Ajouter au panier</button></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- cours 1 -->
+
+                    <div id="cours1" class="cours">
+                        <div class="paragraph paragraph-left">
+                            <h1>Comment encourager le client à réaliser un achat sans qu’il se sente forcé ?</h1>
+                            <p>Rendre possible l’achat d’un produit ou d’un service sans obliger la création d’un compte va permettre à l’acheteur de commander immédiatement. Veillez à éviter l’ajout de produit et de services annexes au panier sans que cette action ne soit déclenchée par l’utilisateur. Il faut laisser à l’utilisateur le contrôle de sa commande pour ne pas compromettre la relation de confiance. Évitez toute forme de vente forcée.</p>
+                        </div>
+                        <div class="paragraph paragraph-right">
+                            <h1>Pourquoi proposer au moins deux moyens de paiement ?</h1>
+                            <p>Il est important de permettre aux utilisateurs de choisir le mode de paiement qui leur convient le mieux. Selon le contexte, les utilisateurs qui sont dans l’incapacité temporaire ou permanente d’utiliser un moyen de paiement particulier doivent pouvoir accéder à une alternative.</p>
+                        </div>
+                        <div class="paragraph paragraph-left">
+                            <h1>Comment accroître la confiance d’un client ?</h1>
+                            <p>Pour augmenter la confiance d’un potentiel acheteur, mentionnez l’appartenance à un label ou une récompense, avec un lien vers la source. Donnez un accès immédiat à l’utilisateur pour l’aider à comprendre de quoi il s’agit, permettez-lui de vérifier par lui même l’information afin d’accroître le degré de confiance et de crédibilité. Permettre aux utilisateurs d’afficher et d’imprimer une trace de leur commande leur fournit une preuve écrite de l’opération effectuée, et renforce la traçabilité de la transaction.</p>
+                        </div>
+                        <div class="paragraph paragraph-right">
+                            <h1>Pourquoi est-il utile d’indiquer toutes les informations relatives au fonctionnement des services et conditions après-vente ?</h1>
+                            <p>En indiquant les horaires et tarifs, vous permettez aux utilisateurs d’anticiper d’éventuelles difficultés d’utilisation et/ou de fonctionnement du bien ou du service proposé. Cela va réduire le nombre de sollicitations du service client. Ainsi vous éviterez une navigation et des commandes inutiles.</p>
+                        </div>
+                        <div class="paragraph paragraph-left">
+                            <h1>Comment rassurer le client avant l’achat ?</h1>
+                            <p>Les recours en cas de litige sont indiqués dans les conditions générales de vente ou d’utilisation pour rassurer l’internaute avant l’achat. Vous devez donner à l’acheteur toutes les informations liées à son achat, que celui-ci se passe bien ou non, pour permettre aux utilisateurs de comprendre ou d’anticiper d’éventuelles difficultés sur le site ou lors de la transaction.</p>
+                        </div>
+                        <div class="paragraph paragraph-right">
+                            <h1>Comment rassurer le client quand aux risques concernant sa commande ?</h1>
+                            <p>Proposer un service de réclamations accessible depuis chaque page du site permet de rassurer le client, qui pourra facilement interagir avec un service efficace en cas de problème. Il pourra s’adresser ou adresser directement ses réclamations au bon interlocuteur et être accompagné tout au long de la procédure d’achat.</p>
+                        </div>
+                        <div class="button">
+                            <p>
+                                <a href="#quizz1" title="Accéder au quizz"><button type="button" onclick="toggle('quizz1');parentNode.remove();">Accéder au quizz</button></a>
+                            </p>
+                        </div>
+                        <div id="quizz1" class="cours">
+                            <div class="button">
+                                <p>
+                                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeMgwDlEBSj7Mg2aWg8Q_cyxyVa22IDiNRk8MxorZwbs3vCUw/viewform?embedded=true" width="100%" height="1925" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
+                                    <a href="#article1" title="Valider le cours"><button type="button" onclick="verify('valide1');parentNode.remove();">Valider le cours</button></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- article 2 -->
+                    
+                    <div class="article article2" id="article2">
+                        <div class="article-number"><span>2</span></div>
+                        <div class="article-content">
+                            <h1>Principe 2 : interface et design</h1>
+                            <div id="valide2" class="valide"><p><i class="material-icons">check_circle</i>Cours validé</p></div>
+                            <p class="price">0€</p>
+                            <div class="footer">
+                                <div><p>La conception d’une interface à la fois esthétique et simple à comprendre peut paraître pas importante pour un site de e-commerce.</p></div>
+                                <div class="button">
+                                    <p>
+                                        <a href="#cours2" title="Ajouter au panier"><button type="button" onclick="toggle('cours2');parentNode.remove();">Ajouter au panier</button></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- cours 2 -->
+
+                    <div id="cours2" class="cours">
+                        <div class="paragraph paragraph-left">
+                            <h1>Pourquoi une interface UX & UI est-elle importante pour le e-commerce ?</h1>
+                            <p>
+                                Même si ces règles ne sont pas toutes respectées dans les sites les plus célèbres, avoir un site qui répond aux règles d’accessibilités est un énorme avantage. Il est essentiel d’avoir un outil qui soit intuitif tout en ayant un aspect graphique attrayant.<br><br>
+                                Par intuitif, on entend que la construction du site soit faite de sorte à ce que ses utilisateurs se retrouvent rapidement et comprennent comment utiliser l’interface (menu simple, boutons adéquats). Cette intuitivité doit être accompagné par un design pertinent.<br><br>
+                                En général un kit d’éléments graphiques simple et parlant est utilisé :<br><br>
+                                - Utiliser entre 2 et 3 couleurs<br>
+                                - Concevoir des icônes significatives<br>
+                                - Ne pas surcharger la page d’éléments<br><br>
+                                Cet ensemble permet :<br><br>
+                                - D'utiliser une interface graphique simple pour maximiser les chances d’achats<br>
+                                - D'utiliser une interface intuitive pour rassurer les clients<br>
+                                - D'utiliser une interface attractive pour fidéliser les clients<br>
+                            </p>
+                        </div>
+                        <div class="paragraph paragraph-right">
+                            <h1>Comment différencier intuitivité (UX) et design (UI) ?</h1>
+                            <p>L'intuitivité correspond critères d’accessibilité (UX) dans lequel est inclus les fonctionnalités du site et l’élaboration du contenu savant du site. Le design est inclu dans l’UX mais fait aussi parti de l’UI (un critère d’accessibilité imbriqué dans l’UX) et désigne l’ensemble des éléments qui vont “habiller” le contenu de l’UX (identité visuelle, mise en page, charte graphique).</p>
+                        </div>
+                        <div class="paragraph paragraph-left">
+                            <h1>UI : Quels sont les composantes graphiques essentielles d’une interface ?</h1>
+                            <p>
+                                Lorsqu’il sera temps de poser des couleurs et des formes sur votre contenu il sera d’abord nécessaire de mettre en place une identité visuelle durable avec l’aide d’une charte graphique. Ce document permet d’établir l’ensemble des règles de mise en page, de visuels et d’utilisations de contenus graphiques. Cet outil vous permettra de voir beaucoup plus clair, et vous saurez quelles sont les règles respecter. Votre contenu sera habillé avec une cohérence visible.<br><br>
+                                Éléments à gérer dans votre charte graphique :<br>
+                                - La typographie (nom, taille, quel traitement final)<br>
+                                - Les couleurs (code hexa)<br>
+                                - Le logo et ses déclinaisons (taille, emplacements)<br>
+                                - Justifier ses choix<br>
+                                - Élaborer un texte expliquant les objectifs, les valeurs que la marque veut prôner
+                            </p>
+                        </div>
+                        <div class="paragraph paragraph-right">
+                            <h1>UI : Comment mettre ces éléments en place tout en respectant les règles d’accessibilités ?</h1>
+                            <p>
+                                Lors de la conception de votre site e-commerce vous allez devoir gérer les aspects intuitifs et graphiques de celui-ci. Voici quelques conseils pratiques pour qu’ils respectent les règles d’accessibilités :<br><br>
+                                Le site dans sa globalité : Imaginer une interface simple, le client doit se retrouver facilement. Pour cela pensez aux essentiels : respectez la forme classique des sites web (menu en haut, barre de recherche)<br>
+                                Les couleurs : Veillez à pas utiliser trop de couleurs (en général 3 couleurs est suffisant). Celles-ci doivent être cohérente avec votre projet et doivent aussi adhérer aux attentes des clients. Vous pouvez aussi concevoir une interface avec des paramètres qui répondent aux besoins des individus daltoniens.<br>
+                                Les typographies : Les typographies sont un élément clé d’un site e-commerce, les yeux des clients seront souvent porter sur celles-ci. Il vous faut donc une typographie clair, lisible comme Roboto ou Montserrat pour les textes courants (avis, descriptions produits)<br>
+                                Pour les titres une typographie grasse en capitale est un bon moyen car elles sont facilement repérable et rapidement lisible. Si vous avez besoin de dénoter d’autre partie de texte comme des sous-parties par exemple, vous pouvez utiliser une version italique de votre typographie de texte courant.
+                            </p>
+                        </div>
+                        <div class="paragraph paragraph-left">
+                            <h1>UX : Comment mettre en place une interface intuitive ?</h1>
+                            <p>
+                                La mise en place d’une interface intuitive nécessite :<br>
+                                -  La création de boutons visible, facilement distinguable, et compréhensible est indispensable (bouton vert ou bleu pour valider par exemple)<br>
+                                -  Le menu est une partie très importante de votre interface. Celui-ci doit être reconnaissable au premier coup d’œil.                                
+                            </p>
+                        </div>
+                        <div class="paragraph paragraph-right">
+                            <h1>Quels seront mes avantages par rapport aux concurrents qui n’utilisent pas les règles d’UX Design ?</h1>
+                            <p>
+                                L’avantage de répondre aux règles d'accessibilités permet dans un premier temps d’augmenter le nombre de clients sur votre site web. En effet, une interface propre avec des éléments pertinents, un contenu compréhensible et un graphisme soigné améliorera l’expérience utilisateurs. Au delà d’améliorer une expérience singulière, vous aurez allez aussi pouvoir fidéliser votre clientèle qui sera ravie d’utiliser votre site tant pour sa clarté que son éthique<br><br>
+                                Le tout est gain de fidélité et assure une qualité.<br><br>
+                                Un exemple de site surchargé : <a href="https://best.aliexpress.com">https://best.aliexpress.com</a><br>
+                                Un exemple de site avec une interface agréable : <a href="https://shop.gramm.co.uk">https://shop.gramm.co.uk</a>
+                            </p>
+                        </div>
+                        <div class="button">
+                            <p>
+                                <a href="#quizz2" title="Accéder au quizz"><button type="button" onclick="toggle('quizz2');parentNode.remove();">Accéder au quizz</button></a>
+                            </p>
+                        </div>
+                        <div id="quizz2" class="cours">
+                            <div class="button">
+                                <p>
+                                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeNByaLyO4NdFWlSR0Ift8ghgNpU_gQx5gK1iebqNRzgZRfrQ/viewform?embedded=true" width="100%" height="1348" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
+                                    <a href="#article2" title="Valider le cours"><button type="button" onclick="verify('valide2');parentNode.remove();">Valider le cours</button></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- article 3 -->
+
+                    <div class="article article3" id="article3">
+                        <div class="article-number"><span>3</span></div>
+                        <div class="article-content">
+                            <h1>Principe 3 : suivi, clarté et accessibilité de commande:</h1>
+                            <div id="valide3" class="valide"><p><i class="material-icons">check_circle</i>Cours validé</p></div>
+                            <p class="price">0€</p>
+                            <div class="footer">
+                                <div><p>Suivi, clarté et accessibilité de commande.</p></div>
+                                <div class="button">
+                                    <p>
+                                        <a href="#cours3" title="Ajouter au panier"><button type="button" onclick="toggle('cours3');parentNode.remove();">Ajouter au panier</button></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- cours 3 -->
+
+                    <div id="cours3" class="cours">
+                        <div class="paragraph paragraph-left">
+                            <h1>Comment être clair sur un produit et sa livraison ?</h1>
+                            <p>
+                                La disponibilité des produits doit être indiquée avant la validation définitive de la commande, afin d’anticiper d’éventuelles difficultés et une augmentation du délai de livraison.<br>
+                                Le délai de livraison estimé doit être indiqué avant la validation définitive de la commande, afin de permettre aux utilisateurs d’identifier la date réelle à laquelle le produit commandé sera effectivement en leur possession.
+                            </p>
+                        </div>
+                        <div class="paragraph paragraph-right">
+                            <h1>Comment gérer le panier de l’utilisateur ?</h1>
+                            <p>La modification de la quantité de chaque article, l’ajout et la suppression d’un ou plusieurs articles doivent rester possibles avant la validation définitive de la commande, afin de permettre à l’utilisateur de modifier facilement sa commande.</p>
+                        </div>
+                        <div class="paragraph paragraph-left">
+                            <h1>Pourquoi indiquer des modalités de récupération pour un bien dématérialisé ?</h1>
+                            <p>Les modalités de récupération d’un bien dématérialisé doivent être précisées avant la commande, afin de permettre à l’utilisateur d’anticiper les conditions et les moyens d’accès au service ou au bien dématérialisé, mais aussi d’éviter les déceptions et le traitement de réclamations.</p>
+                        </div>
+                        <div class="paragraph paragraph-right">
+                            <h1>Pourquoi indiquer les conditions de paiement ?</h1>
+                            <p>
+                                Les conditions de débit ou d’encaissement doivent être spécifiées avant la validation définitive de la commande, afin de permettre aux utilisateurs d’identifier précisément les conditions de l’encaissement.<br>
+                                Les moyens de paiement acceptés et les procédures correspondantes doivent être indiquées afin de permettre aux utilisateurs d’anticiper le mode et les conditions de paiement et de vérifier avant la commande s’ils pourraient la mener à son terme.
+                            </p>
+                        </div>
+                        <div class="paragraph paragraph-left">
+                            <h1>Pourquoi indiquer les conditions de remboursement ?</h1>
+                            <p>Les conditions de remboursement doivent être indiquées afin de permettre aux utilisateurs d'identifier précisément les pièces nécessaires en cas de nécessité de retour du produit, d’anticiper d’éventuels problèmes en cas de demande de remboursement réalisée après le délai légal, de diminuer le nombre de démarches inutiles et le nombre de demandes au support client, et d’augmenter le taux de transformation de votre site de e-commerce.</p>
+                        </div>
+                        <div class="paragraph paragraph-right">
+                            <h1>Comment gérer les adresses de livraison et de facturation ?</h1>
+                            <p>Une adresse de livraison différente de l’adresse de facturation peut être spécifiée afin de permettre aux utilisateurs de faire livrer un achat sur le lieu de leur choix.</p>
+                        </div>
+                        <div class="paragraph paragraph-left">
+                            <h1>Comment confirmer l’achat à l’utilisateur ?</h1>
+                            <p>Un courriel indiquant la référence de la transaction et les données de la commande doit être envoyé suite à la validation afin de donner à l’utilisateur une confirmation des informations relatives à la commande et de permettre à l’utilisateur de conserver un historique de la transaction ailleurs que dans le site.</p>
+                        </div>
+                        <div class="button">
+                            <p>
+                                <a href="#quizz3" title="Accéder au quizz"><button type="button" onclick="toggle('quizz3');parentNode.remove();">Accéder au quizz</button></a>
+                            </p>
+                        </div>
+                        <div id="quizz3" class="cours">
+                            <div class="button">
+                                <p>
+                                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc60tznmfRi7YM-tkxHD4lkdc4mMW2LBVX1-pEoBRA0FMNvfg/viewform?embedded=true" width="100%" height="1369" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
+                                    <a href="#article3" title="Valider le cours"><button type="button" onclick="verify('valide3');parentNode.remove();">Valider le cours</button></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- article 4 -->
+
+                    <div class="article article4" id="article4">
+                        <div class="article-number"><span>4</span></div>
+                        <div class="article-content">
+                            <h1>Qualité et transparence des produits</h1>
+                            <div id="valide4" class="valide"><p><i class="material-icons">check_circle</i>Cours validé</p></div>
+                            <p class="price">0€</p>
+                            <div class="footer">
+                                <div><p>Qualité et transparence des produits.</p></div>
+                                <div class="button">
+                                    <p>
+                                        <a href="#cours4" title="Ajouter au panier"><button type="button" onclick="toggle('cours4');parentNode.remove();">Ajouter au panier</button></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- cours 4 -->
+
+                    <div id="cours4" class="cours">
+                        <div class="paragraph paragraph-left">
+                            <h1>Comment présenter un produit et le mettre en valeur ?</h1>
+                            <p>
+                                Dès le début, lorsque le visiteur découvre un produit, il doit pouvoir identifier rapidement, la nature et les caractéristiques quantifiables des produits et services (dimensions, durée, contenance, etc.), ces informations doivent être indiquées clairements et accompagnées des meilleures photos possibles . Elles permettent aux utilisateurs d'identifier précisément la nature et les spécifications des produits proposés. Instinctivement il sera familiarisé, et en mesure de s’approprier le produit.<br>
+                                Lorsque vous présentez les produits ceux qui sont indisponibles font l’objet d’une différenciation visuelle et textuelle. Cela permet d’éviter les confusions, et déceptions. Ainsi, le temps sur le site est optimisé.
+                            </p>
+                        </div>
+                        <div class="paragraph paragraph-right">
+                            <h1>Comment l’utilisateur a-t-il confiance dans la qualité ?</h1>
+                            <p>
+                                L’élément participant sans aucun doute à la mise en confiance avec l’utilisateur, est la transparence sur la provenance et tous les détails accompagnant la production. Vous devez fournir aux utilisateurs une indication véritable de l’existence officielle de la structure qui propose les contenus ou le service. Prenez soin notamment d’indiquer, le numéro d’immatriculation délivré aux sociétés ou organisations au terme des procédures légales d’enregistrement en vigueur dans leur pays.<br>
+                                N’oubliez pas la période et les conditions de validité des offres spéciales et promotions, elles sont importante car en attirant un potentiel client, celui-ci doit prendre connaissance rapidement de la période au cour de laquelle il peut bénéficier de l’offre. Dans un cas contraire cela peut produire l’effet inverse et repousser les visiteurs (pensez également à utiliser les promotions avec modération, une offre trop aguicheuse peut paraître louche, et remettre en cause l'authenticité de votre marque)
+                            </p>
+                        </div>
+                        <div class="paragraph paragraph-left">
+                            <h1>Comment indiquer qualitativement le prix ?</h1>
+                            <p>
+                                Les prix affichés mentionnent le détail des taxes et suppléments éventuels ainsi que le montant hors taxes. Vous devez offrir rapidement aux utilisateurs une idée du prix final.<br>
+                                Avant de finaliser une commande prévoyez d’indiquer les conditions de garantie. Pour permettre aux utilisateurs d'identifier précisément la nature des services associés et leur coût.<br>
+                                Retenez avant tout qu’il est toujours mieux de justifier votre prix, témoignez au mieux de la qualité de votre produit, provenance, matériaux, fonctionnalités ou encore savoirfaire si l’occasion s’y présente.
+                            </p>
+                        </div>
+                        <div class="paragraph paragraph-right">
+                            <h1>Et après comment témoigner de la qualité des services ?</h1>
+                            <p>
+                                Après validation du paiement, Les conditions de fonctionnement du service aprèsvente (tarifs, horaires, moyens de contact, etc.) sont indiquées. Elles Permettent aux utilisateurs de connaître les conditions d’assistance en cas de difficulté , de fidéliser et de maintenir la confiance.<br><br>
+                                Pour terminer le point sur la qualité et la transparence des produits, retenez que la transparence vis à vis de vos client est très importante, soyez le plus honnête et veillez à ne pas mentir ! L’important est d’instaurer une relation de confiance dans le but de fidéliser le client.
+                            </p>
+                        </div>
+                        <div class="button">
+                            <p>
+                                <a href="#quizz4" title="Accéder au quizz"><button type="button" onclick="toggle('quizz4');parentNode.remove();">Accéder au quizz</button></a>
+                            </p>
+                        </div>
+                        <div id="quizz4" class="cours">
+                            <div class="button">
+                                <p>
+                                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdA7iIOZZ8zQxrH_0alPxep3uT2mn-CIKmzJhoCAK8aOh84Cg/viewform?embedded=true" width="100%" height="1556" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
+                                    <a href="#article4" title="Valider le cours"><button type="button" onclick="verify('valide4');parentNode.remove();">Valider le cours</button></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                        
+                </div>
+                
+            </div>
+
+            <!-- footer section -->
+
+            <footer>
+                <div class="footer copyright">
+                    <p>&copy; 2020 IUT Bordeaux Montaigne</p>
+                </div>
+                <div class="footer links">
+                    <p><a href="" title="Conditions d'utilisation">Conditions d'utilisation</a>&nbsp;|&nbsp;<a href="" title="Confidentialié">Confidentialié</a></p>
+                </div>
+                <p class="credits">Un projet de Marc Lacaut, Lucas Marsalle, Léo Mellé, Tom Soulié, Olivier Techer, Evan Van Der Erve.</p>
+            </footer>
+
+        </div>
+
+        <div id="myModal" class="modal">
+        
+            <div class="modal-content">
+                <span class="close" lang="en" title="Actualiser"><i class="material-icons">refresh</i></span>
+                <div class="diplome">
+                    <div class="diplome-content"><img src="diplomefinal.jpg" alt="Diplôme" title="Diplôme"></div>
+                    <div class="diplome-content">
+                        <h1>🎉 Félicitations !</h1>
+                        <p>Vous avez remplis tous les pré-requis nécessaires pour développer un bon site de e-commerce respectant les règles de UX design.</p>
+                        <p>Téléchargez dès maintenant le diplôme attestant de votre qualification d'UX designer !</p>
+                        <p class="button"><a href="Certification_UX.pdf" target="_blank">Télécharger le PDF</a></p>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+
+        <script type="text/javascript">
+        var note = 0;
+        var modal = document.getElementById("myModal");
+        function toggle(i)
+        {
+            var x = document.getElementById(i);
+            x.style.display = "block";
+        }
+        function verify(i)
+        {
+            note++;
+            var x = document.getElementById(i);
+            x.style.display = "block";
+            if(note >= 4)
+            {
+                modal.style.display = "block";
+            }
+        }
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() {
+            location.reload();
+        }
+        </script>
+
+    </body>
+</html>

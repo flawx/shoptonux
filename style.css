@@ -1,0 +1,504 @@
+@font-face {
+    font-family: 'Aquamarina Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Aquamarina Regular'), url('Aquamarina.woff') format('woff');
+}
+
+/* GENERAL */
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    overflow-wrap: break-word;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fff;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.container {
+    position: relative;
+    border-bottom: solid 1px #ddd;
+}
+
+button:focus {
+    outline: 0;
+}
+
+/* HEADER */
+
+/* navbar */
+
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #333;
+    background-color: #fff;
+    z-index: 98;
+    box-shadow: -5px 5px 15px rgb(0,0,0,0.5);
+}
+
+@media screen and (max-width: 1080px) {
+    .navbar a.link {
+        display: none;
+    }
+}
+
+.navbar a, .navbar a:visited, .navbar a:active, .navbar a:focus {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+}
+
+.navbar a:hover {
+    color: #666;
+}
+
+.navbar a.logo {
+    font-size: 23px;
+}
+
+.navbar a.link {
+    margin: 4.5px;
+}
+
+/* searchbar */
+
+.searchbar {
+    padding: 12px;
+}
+
+@media screen and (max-width: 1080px) {
+    .searchbar {
+        display: none;
+    }
+}
+
+.navbar input[type=text] {
+    height: 18px;
+    padding: 6px;
+    font-size: 16px;
+    border: solid 1px #000;
+}
+
+.searchbar button {
+    float: right;
+    border: none;
+    cursor: pointer;
+    height: 32px;
+    padding: 3px;
+    background-color: #000;
+    border-right: solid 1px #000;
+    border-top: solid 1px #000;
+    border-bottom: solid 1px #000;
+    color: #fff;
+    transition-duration: 0.5s;
+}
+
+.searchbar button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* iconsbar */
+
+.iconsbar {
+    display: flex;
+}
+
+
+/* MAIN */
+
+.main {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+
+.center {
+    text-align: center;
+}
+
+/* welcome */
+
+.welcome {
+    height: 768px;
+    width: 100%;
+    background-image: url('fond.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media screen and (min-width: 1080px) {
+    .middle a.button {
+        padding: 18px;
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .middle a.button {
+        padding: 14px;
+        font-size: 28px;
+    }
+    .middle h1, .middle p {
+        margin: 8px;
+    }
+}
+
+.middle p {
+    margin-bottom: 32px;
+}
+
+.middle a.button {
+    text-decoration: none;
+    background-color: #000;
+    border: solid 1px #000;
+    color: #fff;
+    transition-duration: 0.5s;
+}
+
+.middle a.button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* video */
+
+.video {
+    left: 0;
+    right: 0;
+    padding: 64px;
+    background-color: #000;
+    z-index: 99;
+}
+
+@media screen and (max-width: 1080px) {
+    .video video {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .video video {
+        width: 70%;
+    }
+}
+
+.video video {
+    margin-bottom: 32px;
+}
+
+.video button {
+    border: none;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-decoration: underline;
+    background-color: transparent;
+    color: #fff;
+}
+
+.video button:hover {
+    color: #666;
+}
+
+#text-explicatif {
+    display: none;
+    text-align: left;
+    font-size: 24px;
+    color: #fff;
+}
+
+/* principes */
+
+.principes {
+    background-color: #fff;
+}
+
+@media screen and (min-width: 1080px) {
+    .article {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+    .article-content {
+        padding: 64px;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .article {
+        padding-top: 43px;
+    }
+    .article-number span {
+        visibility: hidden;
+    }
+    .article-content {
+        left: 0;
+    }
+    .article-content hr {
+        display: none;
+    }
+    .article-content h1, .article-content p {
+        margin: 32px !important;
+    }
+    .footer button i {
+        display: block;
+    }
+}
+
+.article {
+    display: flex;
+}
+
+.article button, .cours button, .diplome a {
+    font-size: 18px;
+    padding: 12px;
+    border: none;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+}
+
+.article1 {
+    background-color: #E74C3C;
+}
+
+.article2 {
+    background-color: #45CDB2;
+}
+
+.article3 {
+    background-color: #C696B2;
+}
+
+.article4 {
+    background-color: #8293FF;
+}
+
+.article-number {
+    max-height: 473px !important;
+}
+
+.article-number span {
+    position: relative;
+    left: 64px;
+    top: -144px;
+    max-height: 473px !important;
+    font-family: 'Aquamarina Regular', sans-serif;
+    font-size: 751px;
+    color: #fff;
+}
+
+.article-content {
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    color: #000;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.article-content p.price {
+    margin: 0;
+    font-size: 64px;
+}
+
+.article-content div.footer {
+    display: flex;
+    width: 100%;
+}
+
+div.button {
+    width: 100%;
+    text-align: right;
+}
+
+div.button button {
+    cursor: pointer;
+    border: solid 1px #000;
+    transition-duration: 0.5s;
+}
+
+div.button button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.cours {
+    display: none;
+    padding: 64px;
+    color: #000;
+}
+
+#cours1 {
+    background-image: url('Web 1920 – 1.png');
+    background-size: 100%;
+}
+
+#cours2 {
+    background-image: url('Web 1920 – 3.png');
+    background-size: 100%;
+}
+
+#cours3 {
+    background-image: url('Web 1920 – 5.png');
+    background-size: 100%;
+}
+
+#cours4 {
+    background-image: url('Web 1920 – 7.png');
+    background-size: 100%;
+}
+
+.paragraph {
+    line-height: 30px;
+}
+
+.paragraph p {
+    margin-bottom: 128px;
+}
+
+.paragraph:last-child p {
+    margin-bottom: 0px !important;
+}
+
+.paragraph-left {
+    text-align: left;
+}
+
+.paragraph-right {
+    text-align: right;
+}
+
+.valide {
+    display: none;
+    color: #2ecc71;
+}
+
+/* modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #666;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.diplome {
+    display: flex;
+}
+
+.diplome img {
+    width: 100%;
+}
+
+.diplome p.button {
+    text-align: center;
+    margin-top: 64px;
+}
+
+.diplome-content {
+    width: 50%;
+}
+
+/* footer */
+
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 64px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    color: #fff;
+}
+
+@media screen and (min-width: 1080px) {
+    div.copyright, div.copyright p {
+        float: left;
+    }
+    div.links, div.links p {
+        float: right;
+    }
+}
+
+footer p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+footer p.credits {
+    color: #666;
+}
+
+footer a {
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    z-index: 99;
+}
+
+footer a:hover {
+    color: #ddd;
+}
+
+.footer {
+    width: 50%;
+}
